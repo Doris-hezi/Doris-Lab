@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://du06tefdgrvvx"]
+
+[ext_resource type="Texture2D" uid="uid://b4c2anp6dpwjo" path="res://icon.svg" id="1_p0o3p"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(8, 5)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 3.0
+offset_top = 118.0
+offset_right = 226.0
+offset_bottom = 158.0
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(66, 60)
+scale = Vector2(0.3125, 0.3125)
+texture = ExtResource("1_p0o3p")
