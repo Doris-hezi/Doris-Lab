@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://ch3jnnlbx0y2r"]
+
+[ext_resource type="Texture2D" uid="uid://btmjtt6riwet0" path="res://Assets/Gordon-Channel-Back-Bed__Left_3552x2371-_x3.png" id="1_jbd64"]
+[ext_resource type="Texture2D" uid="uid://byqla8vsepi1i" path="res://Assets/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA3L3Jhd3BpeGVsX29mZmljZV8zNF9iYWNrX3ZpZXdfY2xvc2V1cF9wcm9kdWN0X3Bob3RvZ3JhcGhfb2ZfYV93aF9hNTVlNjE5Yy05MjBkLTRhZDUtYWFhZi00MjQ1YTFmN2UzMjRfMS5wbmc.png" id="2_ajtys"]
+[ext_resource type="PackedScene" uid="uid://cu4rryyw556xc" path="res://node_2d.tscn" id="3_p1du4"]
+
+[node name="Lab1" type="Node2D"]
+position = Vector2(0, 100)
+
+[node name="bed" type="Sprite2D" parent="."]
+position = Vector2(250, 189)
+scale = Vector2(0.443287, 0.443287)
+texture = ExtResource("1_jbd64")
+
+[node name="laptop" type="Sprite2D" parent="."]
+position = Vector2(296, 181)
+scale = Vector2(0.0670187, 0.0589225)
+texture = ExtResource("2_ajtys")
+
+[node name="room" parent="." instance=ExtResource("3_p1du4")]
+position = Vector2(-67, 43)
+scale = Vector2(1, 1)
