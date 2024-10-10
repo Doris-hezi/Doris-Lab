@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://8omfd2xyxfk8"]
+
+[ext_resource type="Texture2D" uid="uid://dc7aswxvaopc4" path="res://icon.svg" id="1_2moil"]
+[ext_resource type="Script" path="res://script/player.gd" id="2_ov4tl"]
+[ext_resource type="PackedScene" uid="uid://cmlqc82fo2tkv" path="res://script/enemy.tscn" id="3_3346h"]
+[ext_resource type="PackedScene" uid="uid://durbp008rwhqw" path="res://scenes/lab2 example.tscn" id="4_sq4jw"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(62, 44)
+scale = Vector2(0.203125, 0.203125)
+texture = ExtResource("1_2moil")
+script = ExtResource("2_ov4tl")
+
+[node name="Node2D" parent="." instance=ExtResource("3_3346h")]
+position = Vector2(63, 87)
+
+[node name="Node2D2" parent="." instance=ExtResource("4_sq4jw")]
+position = Vector2(98, 72)
